@@ -1,0 +1,37 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ExamHistory {
+  id                String   @id @default(cuid())
+  userId           String
+  examId           String
+  score            Int
+  questionsAttempted Int
+  questionsCorrect  Int
+  timeTaken        Int
+  completedAt      DateTime @default(now())
+  createdAt        DateTime @default(now())
+
+  @@index([userId])
+}
+
+model UserProgress {
+  id                String   @id @default(cuid())
+  userId           String   @unique
+  completedFlashcards String   // Stored as JSON string
+  completedExams    String   // Stored as JSON string
+  examScores        String   // Stored as JSON string
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@index([userId])
+}

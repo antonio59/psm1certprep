@@ -1,0 +1,16 @@
+import { auth } from '@clerk/nextjs';
+import Navigation from '@/components/Navigation';
+import Flashcards from '@/components/Flashcards';
+
+export default async function FlashcardsPage() {
+  const { userId } = await auth();
+  
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <Navigation />
+      <main className="container mx-auto px-4 py-8">
+        <Flashcards userId={userId} />
+      </main>
+    </div>
+  );
+}

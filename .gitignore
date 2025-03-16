@@ -1,0 +1,87 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Testing
+coverage
+.nyc_output
+playwright-report
+test-results
+
+# Production
+dist
+dist-ssr
+*.local
+
+# Vercel
+.vercel
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+.env.development
+.env.staging
+.env.production
+.env.test
+.env.*.development
+.env.*.staging
+.env.*.production
+.env.*.test
+.env.backup
+.env.*.backup
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System
+.DS_Store
+Thumbs.db
+*.pem
