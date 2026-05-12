@@ -13,6 +13,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changes
 
+- Migrate to pnpm, bump next.js v14 to v15, fix 17 vulns
 - Add PSM I Certification Prep README
 - Initial commit: Setup Next.js project with Clerk auth and Supabase
 
@@ -24,6 +25,7 @@ All notable changes to this project will be documented in this file.
 
 ### Documentation
 
+- Update changelog [skip ci]
 - Update changelog [skip ci]
 - Update changelog [skip ci]
 - Update changelog [skip ci]
