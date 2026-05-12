@@ -19,12 +19,14 @@ All notable changes to this project will be documented in this file.
 
 ### Chores
 
+- Remove stale npm lockfile after pnpm migration
 - Add git-cliff config for changelog generation
 - Add git-cliff config for changelog generation
 - Add git-cliff config for changelog generation
 
 ### Documentation
 
+- Update changelog [skip ci]
 - Update changelog [skip ci]
 - Update changelog [skip ci]
 - Update changelog [skip ci]
