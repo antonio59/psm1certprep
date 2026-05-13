@@ -1,0 +1,15 @@
+packages:
+- .
+allowBuilds:
+  sharp: set this to true or false
+  unrs-resolver: set this to true or false
+pnpm:
+  autoInstallPeers: true
+  strictPeerDependencies: false
+  overrides:
+    postcss: ^8.5.10
+    cookie: ^0.7.0
+  packageImportMethod: clone-or-copy
+  allowBuilds:
+    sharp: true
+    unrs-resolver: true
