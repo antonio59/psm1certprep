@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 
 ### Bug Fixes
 
+- Remove --frozen-lockfile for pnpm v11 compatibility
 - Correct pnpm-workspace.yaml format for v11
 
 ### CI/CD
@@ -31,6 +32,7 @@ All notable changes to this project will be documented in this file.
 
 ### Documentation
 
+- Update changelog [skip ci]
 - Update changelog [skip ci]
 - Update changelog [skip ci]
 - Update changelog [skip ci]
